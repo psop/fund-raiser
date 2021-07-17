@@ -4,77 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Noto+Sans+TC&display=swap" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="css/bootstrap.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.css">
     <title>拼拼</title>
 </head>
 <body>
-    <div class="container">
-        <header class="blog-header">
-            <div class="row">
-                <div class="">
-                    <div class="">
-                        <a href="#"><img src="img/logo.jpg" alt="拼拼" class="blog-header-logo"></a>
-                    </div>
-                    <div class="">
-                        <a href="#">關於</a>
-                    </div>
-                    <div class="">
-                        <a href="#">挖寶</a>
-                    </div>
-                    <div class="">
-                        <a href="#">我有個大膽的想法</a>
-                    </div>
-                </div>
-                <div class="">
-                    <a href="#" class="btn btn-warning">登入</a>
-                    <a href="#" class="btn btn-outline-secondary">註冊</a>
-                </div>
-            </div>
-        </header>
-    </div>
-    <div class="bg-light">
+    <div class="bg-white border-bottom border-primary border-4">
         <div class="container">
-            <p class="">魔法科技</p>
-            <h1 class="">拍出會動的照片｜LivePhotos 魔法拍立得</h1>
-            <div class="">
-                <img src="img/produt_image.jpg" alt="product">
-                <div class="">
-                    <p class="">目標 $600,000</p>
-                    <p class="">$280,047</p>
-                    <div class="">41%</div>
+            <header class="blog-header py-3">
+                <div class="row flex-nowrap justify-content-between align-items-center">
+                    <div class="col-5 d-flex justify-content-between align-items-center">
+                        <a href="#"><img src="img/logo.jpg" alt="拼拼" width="110x" height="40px"></a>
+                        <a href="#" class="link-secondary text-decoration-none">關於</a>
+                        <a href="#" class="link-secondary text-decoration-none">挖寶</a>
+                        <a href="#" class="link-secondary text-decoration-none">我有個大膽的想法</a>
+                    </div>
+                    <div class="col-7 d-flex justify-content-end align-items-center">
+                        <a href="#" class="btn btn-primary mx-3 px-4 rounded-pill fw-bold text-secondary">登入</a>
+                        <a href="#" class="btn btn-outline-secondary px-4 rounded-pill fw-bold text-secondary">註冊</a>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </div>
+    
+    <div class="bg-light">
+        <div class="container py-5">
+            <small class="bg-dark rounded-3 text-white px-3 py-1 fs-6">魔法科技</small>
+            <h1 class="mt-1 mb-4 fw-bold">拍出會動的照片｜LivePhotos 魔法拍立得</h1>
+            <div class="row d-flex">
+                <img src="img/produt_image.jpg" class="col-8 img-fluid rounded-3" alt="product">
+                <div class="col-4">
                     <div class="">
-                        <div class="">
-                            <p class="">贊助人數</p>
-                            <p class="">1374 人</p>
+                        <p class="mb-3">目標 $600,000<br>
+                            <span class="fs-3 fw-bold">$280,047</span>
+                        </p>
+                    </div>
+                    <div class="progress mb-3">
+                        <div class="progress-bar text-dark" role="progressbar" style="width: 41%;" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100">41%</div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-6">
+                            <p>贊助人數<br><span class="fs-2 fw-bold">1374 人</span></p>
                         </div>
-                        <div class="">
-                            <p class="">募資倒數</p>
-                            <p class="">27 天</p>
+                        <div class="col-6">
+                            <p>募資倒數<br><span class="fs-2 fw-bold">27 天</span></p>
                         </div>
                     </div>
-                    <div class="">
-                        <!-- <i class="fas fa-medal"></i> -->
-                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
-                        <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
-                        <!-- <i class="fas fa-crown"></i> -->
+                    <div class="mt-0 mb-3">
+                        <i class="fa fa-thumbs-o-up fs-4" aria-hidden="true"></i>
+                        <i class="fa fa-lightbulb-o ps-3 fs-4" aria-hidden="true"></i>
                     </div>
-                    <div class="">
-                        <p class="">專案募資中！<br>在 2021/06/14 23:59 募資結束</p>
+                    <div class="bg-white mb-3 p-3 border-start border-primary border-3">
+                        <p class="mb-0">專案募資中！<br>在 2021/06/14 23:59 募資結束</p>
                     </div>
-                    <a href="#" class="btn btn-warning">贊助專案</a>
-                    <div class="">
-                        <a href="#" class="btn btn-outline-secondary d-flex">
+                    <a href="#" class="btn btn-primary rounded-pill col-12 mb-2 text-dark fw-bold">贊助專案</a>
+                    <div class="d-flex">
+                        <a href="#" class="btn btn-outline-secondary d-flex justify-content-center align-items-center rounded-pill col-7 gx-5">
                             <i class="fa fa-heart" aria-hidden="true"></i>
-                            <p>追蹤專案</p>
+                            <p class="ms-1 mb-0">追蹤專案</p>
                         </a>
-                        <a href="#" class="btn btn-outline-secondary d-flex">
+                        <a href="#" class="btn btn-outline-secondary d-flex justify-content-center align-items-center rounded-pill col-5 gx-5">
                             <i class="fa fa-share-alt" aria-hidden="true"></i>
-                            <p>分享</p>
+                            <p class="ms-1 mb-0">分享</p>
                         </a>
                     </div>
                 </div>
@@ -82,150 +74,164 @@
         </div>
     </div>
     
-
     <div class="bg-white border-bottom">
-        <div class="container">
+        <div class="container py-3">
             <ul class="nav">
                 <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">專案介紹</a>
+                    <a class="nav-link active link-dark fw-bold" aria-current="page" href="introduction.html">專案介紹</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">常見問答</a>
+                    <a class="nav-link link-dark" href="QA.html">常見問答</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">目前進度</a>
+                    <a class="nav-link link-dark" href="progress.html">目前進度</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">留言</a>
+                    <a class="nav-link link-dark" href="message.html">留言</a>
                 </li>
             </ul>
+        </div>
+    </div>
 
-            <div class="">
-                <div class="">
-                    <img src="img/p1.jpg" alt="A girl takes picture">
-                    <p class="">施了魔法的照片</p>
-                    <p>受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
-                </div>
-                <div class="">
-                    <img src="img/p2.jpg" alt="Polaroid with many films">
-                    <p class="">留下當下的美好</p>
-                    <p>受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
-                </div>
-            </div>
-
-            <div class="">
-                <h2 class="">贊助專案</h2>
-                <form class="form-control">
+    <div class="bg-white">
+        <div class="container d-flex">
+            <div class="row">
+                <div class="col-8 py-5">
                     <div class="">
-                        <label for="">贊助方案</label>
-                        <select name="sponsorMethod" class="">
-                            <option value="sm1">方案一</option>
-                            <option value="sm2">方案二</option>
-                            <option value="sm3">方案三</option>
-                        </select>
-                    </div>
-                    <div class="">
-                        <label for="">收件人姓名</label>
-                        <input type="text">
-                    </div>
-                    <div class="">
-                        <label for="">聯絡電話</label>
-                        <input type="text">
-                    </div>
-                    <div class="">
-                        <label for="">聯絡信箱</label>
-                        <input type="text">
-                    </div>
-                    <div class="">
-                        <label for="">付款方式</label>
-                        <select name="paymentMethod" class="">
-                            <option value="pm1">信用卡付款</option>
-                            <option value="pm2">Line Pay</option>
-                        </select>
-                    </div>
-                    <input type="submit" value="贊助專案" class="btn btn-warning">
-                </form>
-
-                <div class="">
-                    <div class="card">
                         <div class="">
-                            <img src="img/store_img.jpg" alt="A man with plant">
-                            <div class="">
-                                <h4 class="">缺錢事務所</h4>
-                                <p class="">已發起 1 個專案</p>
+                            <img src="img/p1.jpg" width="724" height="474" class="mb-4 rounded" alt="A girl takes picture">
+                            <p class="ps-3 fs-3 fw-bold border-start border-primary border-3">施了魔法的照片</p>
+                            <p class="mb-4">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
+                        </div>
+                        <div class="">
+                            <img src="img/p2.jpg" width="724" height="474" class="mb-4 rounded" alt="Polaroid with many films">
+                            <p class="ps-3 fs-3 fw-bold border-start border-primary border-3">留下當下的美好</p>
+                            <p class="mb-5">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女，外成認心香吸工並知日成展源大超時動為生葉衣致長山對精做英密差家他微熱建取示濟定心一，品定把別銀動，深青輪一物加，生明果。西業白老如天有表非民大條全那遊，李文遊、像香過元學須本致信校態麼資司媽人價在它，地他不我計孩廠然不大指勢生的華常簡岸然，人著母病石金萬得一果。</p>
+                        </div>
+                    </div>
+
+                    <div class="mb-5">
+                        <h3 class="text-center fw-bold">贊助專案</h3>
+                        <form class="border-0">
+                            <div class="mb-3">
+                                <label for="" class="form-label">贊助方案</label>
+                                <select name="sponsorMethods"  class="form-select">
+                                    <option value="sm1">方案一</option>
+                                    <option value="sm2">方案二</option>
+                                    <option value="sm3">方案三</option>
+                                </select>
                             </div>
-                            <p class="">需要點錢錢做些酷酷的東西，拜託各位乾爹乾媽囉！</p>
-                            <div class="">
-                                <div class="">
-                                    <a href="#"><i class="fa fa-facebook"  aria-hidden="true"></i></a>
-                                    <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">收件人姓名</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="tel" class="form-label">聯絡電話</label>
+                                <input type="text" class="form-control" id="tel">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">聯絡信箱</label>
+                                <input type="text" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3 pb-1">
+                                <label for="payment" class="form-label">付款方式</label>
+                                <select name="paymentMethods" class="form-select" id="payment">
+                                    <option value="pm1">信用卡付款</option>
+                                    <option value="pm2">Line Pay</option>
+                                </select>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <input type="submit" value="贊助專案" class="btn btn-primary rounded-pill fs-5 fw-bold text-dark col-2">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-4 py-5">
+                    <div class="card mb-5">
+                        <div class="">
+                            <div class="d-flex p-3">
+                                <img src="img/store_img.jpg"  class="" alt="A man with plant">
+                                <div class="ps-3 d-flex flex-column justify-content-center">
+                                    <h4 class="fs-5">缺錢事務所</h4>
+                                    <p class="mb-0">已發起 1 個專案</p>
+                                </div> 
+                            </div>
+                            <div class="card-body px-3 pb-3">
+                                <p class="">需要點錢錢做些酷酷的東西，拜託各位乾爹乾媽囉！</p>
+                                <div class="d-flex justify-content-between">
+                                    <div class="">
+                                        <a href="#" class="link-dark fs-4"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" class="link-dark fs-4"><i class="fa fa-youtube ps-1" aria-hidden="true"></i></a>
+                                    </div>
+                                    <a href="#" class="btn btn-outline-secondary">
+                                        <!-- <i class="far fa-comment-dots" aria-hidden="true"></i> -->
+                                        <p class="mb-0">聯繫我們</p>
+                                    </a>
                                 </div>
-                                <a href="#" class="btn btn-outline-secondary">
-                                    <i class="far fa-comment-dots" aria-hidden="true"></i>
-                                    <p>聯繫我們</p>
-                                </a>
                             </div>
+                            
                         </div>
                     </div>
                     <div class="">
-                        <p class="">選擇一個方案</p>
-                        <div class="card">
-                            <img src="img/plan_img.jpg" alt="group price">
-                            <div class="">
-                                <p class="限時優惠"></p>
-                                <p class="">2days 20:05:20</p>
+                        <p class="fs-5 fw-bold text-center border-start border-end border-3 border-primary rounded-3 bg-light mb-3 py-1">選擇一個方案</p>
+                        <div class="card mb-3 rounded-5">
+                            <img src="img/plan_img.jpg" width="344" height="123" class="rounded-5 col-12" alt="group price">
+                            <div class="d-flex justify-content-between m-3 border-bottom">
+                                <p class="text-secondary mb-3">限時優惠</p>
+                                <p class="text-secondary mb-2">2 days 20:05:20</p>
                             </div>
-                            <div class="">
-                                <h4 class="">買一送一，只有兩百組別錯過<br>NT$ 1600</h4>
-                                <div class="">
-                                    <p class="">已被贊助88次</p>
-                                    <p class="">限量<span>200</span>個</p>
+                            <div class="p-3">
+                                <p class="fs-4 fw-bold">買一送一，只有兩百組別錯過<br>NT$ 1600</p>
+                                <div class="d-flex">
+                                    <p class="bg-light text-dark text-center p-2 rounded-3">已被贊助88次</p>
+                                    <p class="bg-dark text-white text-center p-2 rounded-3 ms-2">限量<span class="text-primary">200</span>個</p>
                                 </div>
-                                <p class="">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
-                                <a href="#" class="btn btn-warning">贊助此專案</a>
+                                <p class="text-secondary">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
+                                <a href="#" class="btn btn-primary rounded-pill col-12 text-dark fw-bold">贊助此專案</a>
                             </div>
                         </div>
-                        <div class="card">
-                            <img src="img/plan_img.jpg" alt="group price">
-                            <div class="">
-                                <p class="限時優惠"></p>
-                                <p class="">2days 20:05:20</p>
+                        <div class="card mb-3 rounded-5">
+                            <img src="img/plan_img.jpg" width="344" height="123" class="rounded-5 col-12" alt="group price">
+                            <div class="d-flex justify-content-between m-3 border-bottom">
+                                <p class="text-secondary mb-3">限時優惠</p>
+                                <p class="text-secondary mb-3">2 days 20:05:20</p>
                             </div>
-                            <div class="">
-                                <h4 class="">買一送一，只有兩百組別錯過<br>NT$ 1600</h4>
-                                <div class="">
-                                    <p class="">已被贊助88次</p>
-                                    <p class="">限量<span>200</span>個</p>
+                            <div class="p-3">
+                                <p class="fs-4 fw-bold">買一送一，只有兩百組別錯過<br>NT$ 1600</p>
+                                <div class="d-flex">
+                                    <p class="bg-light text-dark text-center p-2 rounded-3">已被贊助88次</p>
+                                    <p class="bg-dark text-white text-center p-2 rounded-3 ms-2">限量<span class="text-primary">200</span>個</p>
                                 </div>
-                                <p class="">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
-                                <a href="#" class="btn btn-warning">贊助此專案</a>
+                                <p class="text-secondary">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
+                                <a href="#" class="btn btn-primary rounded-pill col-12 text-dark fw-bold">贊助此專案</a>
                             </div>
                         </div>
-                        <div class="card">
-                            <img src="img/plan_img.jpg" alt="group price">
-                            <div class="">
-                                <p class="限時優惠"></p>
-                                <p class="">2days 20:05:20</p>
+                        <div class="card mb-3 rounded-5">
+                            <img src="img/plan_img.jpg" width="344" height="123" class="rounded-5 col-12" alt="group price">
+                            <div class="d-flex justify-content-between m-3 border-bottom">
+                                <p class="text-secondary mb-3">限時優惠</p>
+                                <p class="text-secondary mb-3">2 days 20:05:20</p>
                             </div>
-                            <div class="">
-                                <h4 class="">買一送一，只有兩百組別錯過<br>NT$ 1600</h4>
-                                <div class="">
-                                    <p class="">已被贊助88次</p>
-                                    <p class="">限量<span>200</span>個</p>
+                            <div class="p-3">
+                                <p class="fs-4 fw-bold">買一送一，只有兩百組別錯過<br>NT$ 1600</p>
+                                <div class="d-flex">
+                                    <p class="bg-light text-dark text-center p-2 rounded-3">已被贊助88次</p>
+                                    <p class="bg-dark text-white text-center p-2 rounded-3 ms-2">限量<span class="text-primary">200</span>個</p>
                                 </div>
-                                <p class="">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
-                                <a href="#" class="btn btn-warning">贊助此專案</a>
+                                <p class="text-secondary">受就相法大夠局來畫師我只這然以放灣得的後人心年我物我年，或人有動與次出女親構算帶年行著所間女。</p>
+                                <a href="#" class="btn btn-primary rounded-pill col-12 text-dark fw-bold">贊助此專案</a>
                             </div>
                         </div>
                     </div>
-                </div>
             </div>
+            
+            
         </div>
     </div>
     
     <div class="bg-dark">
         <footer class="conatainer p-4 d-flex justify-content-center align-items-center text-white text-center">
-            <p>Copyright © 拼拼 All rights reserved.</p>
+            <p class="mb-0">Copyright © 拼拼 All rights reserved.</p>
         </footer>
     </div>
     
