@@ -11968,3 +11968,12 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.btn-primary:hover {
+  background-color: #FF785E;
+  color: #fff;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #FFDF65;
+  border: 0;
+}
