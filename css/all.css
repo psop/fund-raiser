@@ -11977,3 +11977,14 @@ textarea.form-control-lg {
   background-color: #FFDF65;
   border: 0;
 }
+
+.nav-tabs {
+  border-bottom: 0;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  color: #495057;
+  background-color: #fff;
+  border: none;
+}

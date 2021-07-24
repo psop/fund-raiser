@@ -421,33 +421,40 @@
                         <h3 class="position-absolute top-0 start-50 translate-middle bg-white text-center px-3 fs-lg-4 fs-mobile-2 fw-bold">贊助專案</h3>
                     </div>
 
-                    <form class="border-0">
+                    <form class="border-0 was-validated">
                         <div class="mb-3">
-                            <label for="" class="form-label">贊助方案</label>
-                            <select name="sponsorMethods"  class="form-select">
+                            <label for="sponsorMethods" class="form-label">贊助方案</label>
+                            <select class="form-select" id="sponsorMethods" required>
+                                <option selected disabled value="">請選擇任一方案</option>
                                 <option value="sm1">方案一</option>
                                 <option value="sm2">方案二</option>
                                 <option value="sm3">方案三</option>
                             </select>
+                            <div class="invalid-feedback">請選擇任一方案</div>
                         </div>
                         <div class="mb-3">
                             <label for="name" class="form-label">收件人姓名</label>
-                            <input type="text" class="form-control" id="name">
+                            <input type="text" class="form-control" id="name" required>
+                            <div class="invalid-feedback">必填欄位</div>
                         </div>
                         <div class="mb-3">
                             <label for="tel" class="form-label">聯絡電話</label>
-                            <input type="text" class="form-control" id="tel">
+                            <input type="text" class="form-control" id="tel" required>
+                            <div class="invalid-feedback">必填欄位</div>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">聯絡信箱</label>
-                            <input type="text" class="form-control" id="email">
+                            <input type="text" class="form-control" id="email" required>
+                            <div class="invalid-feedback">請輸入正確的郵件格式</div>
                         </div>
                         <div class="mb-3 pb-1">
                             <label for="payment" class="form-label">付款方式</label>
-                            <select name="paymentMethods" class="form-select" id="payment">
+                            <select name="paymentMethods" class="form-select" id="payment" required>
+                                <option selected disabled value="">請選擇任一付款方式</option>
                                 <option value="pm1">信用卡付款</option>
                                 <option value="pm2">Line Pay</option>
                             </select>
+                            <div class="invalid-feedback">請選擇任一付款方式</div>
                         </div>
                         <div class="d-flex justify-content-center">
                             <input type="submit" value="贊助專案" class="btn btn-primary rounded-pill fs-5 fw-bold text-dark col-lg-2">
