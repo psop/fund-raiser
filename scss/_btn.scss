@@ -6,5 +6,8 @@
 .btn-outline-secondary:hover {
     background-color: $primary;
     border: 0;
+    & > .custom-heart {
+        color: $danger;
+    }
 }
 
