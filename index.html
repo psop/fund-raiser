@@ -421,7 +421,7 @@
                         <h3 class="position-absolute top-0 start-50 translate-middle bg-white text-center px-3 fs-lg-4 fs-mobile-2 fw-bold">贊助專案</h3>
                     </div>
 
-                    <form class="border-0 was-validated">
+                    <form class="border-0 needs-validation" novalidate>
                         <div class="mb-3">
                             <label for="sponsorMethods" class="form-label">贊助方案</label>
                             <select class="form-select" id="sponsorMethods" required>
@@ -430,14 +430,17 @@
                                 <option value="sm2">方案二</option>
                                 <option value="sm3">方案三</option>
                             </select>
+                            <div class="invalid-feedback">請選擇一個方案</div>
                         </div>
                         <div class="mb-3">
-                            <label for="name" class="form-label">收件人姓名（必填）</label>
+                            <label for="name" class="form-label">收件人姓名</label>
                             <input type="text" class="form-control" id="name" required>
+                            <div class="invalid-feedback">必填</div>
                         </div>
                         <div class="mb-3">
-                            <label for="tel" class="form-label">聯絡電話（必填）</label>
+                            <label for="tel" class="form-label">聯絡電話</label>
                             <input type="text" class="form-control" id="tel" required>
+                            <div class="invalid-feedback">必填</div>
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">聯絡信箱</label>
@@ -451,11 +454,13 @@
                                 <option value="pm1">信用卡付款</option>
                                 <option value="pm2">Line Pay</option>
                             </select>
+                            <div class="invalid-feedback">請選擇一個付款方式</div>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <input type="submit" value="贊助專案" class="btn btn-primary rounded-pill fs-5 fw-bold text-dark col-lg-2">
+                            <button type="submit" class="btn btn-primary rounded-pill fs-5 fw-bold text-dark col-lg-2">贊助專案</button>
                         </div>
                     </form>
+                    
                 </div>
                 <div class="col-lg-4 col-md-12 py-5">
                     <div class="card mb-4">
@@ -581,5 +586,27 @@
     </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict'
+
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.querySelectorAll('.needs-validation')
+
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms)
+        .forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+        }, false)
+        })
+    })()
+    </script>
 </body>
 </html>
